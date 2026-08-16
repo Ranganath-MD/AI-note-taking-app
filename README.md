@@ -2,6 +2,9 @@
 
 This directory is NoteFlow’s **global local database**. The app does not use Postgres, SQLite, or a cloud backend. Every folder, note, canvas, theme choice, and version snapshot is JSON on disk here.
 
+<img width="1914" height="1097" alt="Screenshot 2026-08-16 at 9 47 10 PM" src="https://github.com/user-attachments/assets/3b50f68a-aa10-4c21-acc8-2f009514865c" />
+
+
 This README is the canonical reference for:
 
 - how to run the app so this directory is created
