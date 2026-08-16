@@ -201,6 +201,3 @@ Approved notes cannot be written by AI until you re-edit (draft).
 
 ---
 
-## Related project docs
-
-App overview and stack: [`../README.md`](../README.md).
