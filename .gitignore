@@ -9,7 +9,8 @@ dist-ssr
 .output
 .vinxi
 __unconfig*
-todos.json
+notes-data/*
+!notes-data/README.md
 
 # typescript
 *.tsbuildinfo

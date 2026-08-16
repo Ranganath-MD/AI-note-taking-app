@@ -6,6 +6,15 @@ import tailwindcss from "@tailwindcss/vite"
 
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
+  define: {
+    "process.env.IS_PREACT": JSON.stringify("false"),
+  },
+  optimizeDeps: {
+    include: ["@excalidraw/excalidraw"],
+  },
+  ssr: {
+    external: ["@excalidraw/excalidraw"],
+  },
   plugins: [devtools(), tailwindcss(), tanstackStart(), viteReact()],
 })
 

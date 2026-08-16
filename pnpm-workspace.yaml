@@ -5,3 +5,5 @@ allowBuilds:
   lightningcss: true
   unrs-resolver: true
   msw: false
+  '@google/genai': set this to true or false
+  protobufjs: set this to true or false

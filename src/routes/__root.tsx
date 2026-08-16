@@ -1,21 +1,18 @@
+import type { ReactNode } from "react"
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
-import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools"
-import { TanStackDevtools } from "@tanstack/react-devtools"
 
 import appCss from "../styles.css?url"
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      {
-        charSet: "utf-8",
-      },
+      { charSet: "utf-8" },
       {
         name: "viewport",
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "TanStack Start Starter",
+        title: "NoteFlow",
       },
     ],
     links: [
@@ -34,25 +31,14 @@ export const Route = createRootRoute({
   shellComponent: RootDocument,
 })
 
-function RootDocument({ children }: { children: React.ReactNode }) {
+function RootDocument({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="h-svh overflow-hidden bg-background text-foreground antialiased" suppressHydrationWarning>
         {children}
-        <TanStackDevtools
-          config={{
-            position: "bottom-right",
-          }}
-          plugins={[
-            {
-              name: "Tanstack Router",
-              render: <TanStackRouterDevtoolsPanel />,
-            },
-          ]}
-        />
         <Scripts />
       </body>
     </html>

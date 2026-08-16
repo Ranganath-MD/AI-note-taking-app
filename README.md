@@ -1,21 +1,22 @@
-# TanStack Start + shadcn/ui
+# NoteFlow
 
-This is a template for a new TanStack Start project with React, TypeScript, and shadcn/ui.
+Local-first notes with an Excalidraw canvas. Files are written to `notes-data/` on disk.
 
-## Adding components
+## Stack
 
-To add components to your app, run the following command:
+TanStack Start, Router, Query, Store · Tailwind v4 · shadcn/ui (Base UI) · Excalidraw
+
+## Develop
 
 ```bash
-npx shadcn@latest add button
+pnpm install
+pnpm dev
 ```
 
-This will place the ui components in the `components` directory.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
-```
+- `⌘K` search
+- `⌘N` new note
+- **New folder** adds a folder (overflow menu: rename / delete)
+- Note overflow: rename, pin, duplicate, move, delete
+- Theme toggle applies to the whole app, including the canvas
